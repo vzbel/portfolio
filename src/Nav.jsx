@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function Nav(){
     // Hamburger Menu state 
-    let [isMenuVisible, setMenuVisibility] = useState(false);
+    let [isMenuVisible, setMenuVisibility] = useState(true);
 
     // Re-opens menu if:
     // The user opens and closes 
@@ -12,11 +12,13 @@ function Nav(){
     // remain hidden at larger screen sizes
     window.addEventListener('resize', () => {
         if(window.innerWidth >= 640 && !isMenuVisible){
-            setMenuVisibility(true)
+            setMenuVisibility(true);
+            console.log('this happened');
         }else if(window.innerWidth < 640 && isMenuVisible){
             // This is for when the screen is resized from desktop to mobile,
             // the menu will close automatically
-            setMenuVisibility(false)
+            setMenuVisibility(false);
+            console.log('this happened');
         }
     });
     return (
