@@ -10,7 +10,7 @@ function Projects(){
                 <div className="flex flex-col lg:flex-row min-w-fit max-w-7xl gap-10 flex-wrap">
                     <ProjectCard 
                         url="https://restaurante-mexicano.netlify.app/"
-                        thumbnail="/src/assets/SaborMexicano.png"
+                        thumbnail="/SaborMexicano.png"
                         name="Sabor Mexicano"
                         description="Sabor Mexicano is a static restaurant website featuring a 
                         vibrant hero section and a simple menu layout inspired by 
