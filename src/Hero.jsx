@@ -1,7 +1,7 @@
 
 function Hero(){
     return (
-        <section className="flex-1">
+        <section className="flex-1" id="hero">
             <div className="flex max-w-7xl px-6 py-6 items-center mx-auto h-full">
                 <div>
                     <h2 className="mb-5 text-white text-6xl font-semibold">
@@ -15,7 +15,12 @@ function Hero(){
                         I bring your ideas to life with clean code and cutting-edge tools.
                         Let's create something exceptional together!
                     </p>
-                    <button className="bg-white py-4 px-10 rounded-md">Projects</button>
+
+                    <a href="#projects">
+                        <button className="bg-white py-4 px-10 rounded-md">
+                            Projects
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>

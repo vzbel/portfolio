@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard.jsx"
 function Projects(){
     return (
         // Section container
-        <section className="bg-neutral-900 min-h-screen flex items-center p-10">
+        <section className="bg-neutral-900 min-h-screen flex items-center p-10" id="projects">
             {/* Projects Section */}
             <div className="text-white w-fit mx-auto h-fit">
                 <h2 className="text-4xl mb-5 font-medium">Projects</h2>
