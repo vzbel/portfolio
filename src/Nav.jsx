@@ -29,9 +29,9 @@ function Nav(){
                     {/* Site links */}
                     {isMenuVisible ?
                         <ul className='flex flex-col fixed inset-0 p-24 bg-slate-900 sm:bg-transparent gap-6 sm:static sm:flex-row sm:p-0'>
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="mailto:wintrs.mist@gmail.com">Contact</a></li>
+                            <li><a href="#hero" onClick={()=>{window.innerWidth < 640 ? setMenuVisibility(false) : null}}>Home</a></li>
+                            <li><a href="#projects" onClick={()=>{window.innerWidth < 640 ? setMenuVisibility(false) : null}}>Projects</a></li>
+                            <li><a href="mailto:wintrs.mist@gmail.com" onClick={()=>{window.innerWidth < 640 ? setMenuVisibility(false) : null}}>Contact</a></li>
                         </ul>
                     :
                         <></>
